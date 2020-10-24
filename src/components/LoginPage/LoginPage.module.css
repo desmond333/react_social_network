@@ -1,0 +1,10 @@
+.loginPage{
+    background: linear-gradient(to right, #f8d066, #ef491a);
+    padding: 10px;
+}
+.formSummaryError {
+    border: solid #1d9fe3 2px;
+    padding: 5px;
+    margin: 5px;
+    color: red;
+}

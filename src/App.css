@@ -1,0 +1,11 @@
+.app-wrapper {
+    margin: 0 auto;
+    display: grid;
+    max-width: 1000px;
+    grid-template-columns: 1fr 6fr;
+    grid-gap: 40px;
+}
+
+.app-wrapper-content {
+    grid-column: 2;
+}

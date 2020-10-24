@@ -1,0 +1,8 @@
+.profileInfo{
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-column-gap: 20px;
+    margin-bottom: 20px;
+    /*background-color: black;*/
+    /*background-color: #EDEDED;*/
+}

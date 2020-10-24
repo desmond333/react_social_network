@@ -1,0 +1,33 @@
+.postForm{
+    padding: 10px;
+    /*background: linear-gradient(120deg, #09d2ec, #37dc73);*/
+    background-color: #1F2833;
+    border-radius: 8px;
+    height: 80px;
+}
+.postForm form{
+    display: grid;
+    grid-template-columns: 5fr 1fr;
+    align-content: center;
+}
+.postForm form button{
+    grid-column: 2;
+    border-radius: 5px;
+    background-color: yellow;
+    height: 40px;
+}
+
+.postedPosts{
+    background-color: #1F2833;
+    border-radius: 8px;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+.postedPosts h3{
+    padding-left: 20px;
+}
+
+.posts{
+    margin-top: 20px;
+    padding: 10px;
+}

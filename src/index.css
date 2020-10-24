@@ -1,0 +1,37 @@
+*{ /*взял из css real example*/
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 16px; /*взял из css real example*/
+  min-width: 320px; /*взял из css real example*/
+  position: relative; /*взял из css real example*/
+  line-height: 1.75; /*взял из css real example*/
+  overflow-x: hidden; /*взял из css real example*/
+  opacity: 1; /*взял из css real example*/
+  color: #ffffff; /*взял из css real example*/
+
+  background: #0B0C10;
+  /*background: linear-gradient(to right, #9db3db, #0b75e7);*/
+  /*background-size: contain;*/
+  /*background-size: cover;*/
+
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+html, body{ /*взял из css real example*/
+  height: 100%;
+  scrollbar-color: white black; /* «цвет ползунка» «цвет полосы скроллбара» */
+  scrollbar-width: auto;  /* толщина */
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}

@@ -1,0 +1,18 @@
+.profilePhoto{
+    grid-column: 1;
+    display: grid;
+    grid-template-rows: 7fr 1fr;
+    /*background: linear-gradient(120deg, #09d2ec, #37dc73);*/
+    background-color: #1F2833;
+    height: 280px;
+    padding: 20px;
+    border-radius: 8px;
+}
+.profilePhoto img{
+    border-radius: 10px;
+}
+.profilePhoto button{
+    border-radius: 5px;
+    background-color: black;
+    color: white;
+}

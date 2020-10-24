@@ -1,0 +1,8 @@
+.numberPage{
+    font-weight: normal;
+    color: white;
+}
+.numberSelectedPage{
+    font-weight: bold;
+    color: black;
+}

@@ -1,0 +1,83 @@
+.nav {
+    grid-column: 1;
+    /*background-color: gray;*/
+    padding-top: 5px;
+    height: 440px;
+    position: sticky;
+    top: 10px;
+}
+
+.item{
+    display: grid;
+    grid-template-columns: 2fr 10fr;
+    height: 15px;
+  /*  background-color: black;*/
+    margin-bottom: 30px;
+    align-content: center;
+    font-size: 15px;
+}
+.item a:hover{
+    /*Для анимации*/
+    background-position: 0 0;
+    color:#EDEDED;
+}
+
+.item a{
+    color: white;
+    text-decoration: none;
+    padding-left: 7px;
+    margin-left: 10px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    border-radius: 5px;
+    /*Для анимации*/
+    display: block;
+    background-image: linear-gradient(to left,transparent,transparent 50%,#09d2ec 50%,#37dc73);
+    background-position: 100% 0;
+    background-size: 200% 100%;
+    transition: all .25s ease-in;
+}
+
+.itemIcon{
+    height: 26px;
+    /*margin-right: 48px;*/
+}
+
+.friends{
+    /*display: grid;
+    grid-template-rows: 1fr 1fr 1fr;*/
+    height: 163px;
+    text-align: center;
+    font-size: 18px;
+}
+.friends a{
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: bold;
+    border-radius: 5px;
+    margin-bottom: 8px;
+    /*Для анимации*/
+    display: block;
+    background-image: linear-gradient(to left,transparent,transparent 50%,#09d2ec 50%,#37dc73);
+    background-position: 100% 0;
+    background-size: 200% 100%;
+    transition: all .25s ease-in;
+    color: white;
+}
+.friends a:hover{
+    /*Для анимации*/
+    background-position: 0 0;
+    color:#EDEDED;
+}
+.friendsIcon {
+    z-index: 1;
+    height: 50px;
+    border-radius: 30px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+.friendsIcon:hover {
+    background-color: #293A43;
+}
