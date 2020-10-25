@@ -1,15 +1,15 @@
 self.__precacheManifest = [
   {
-    "revision": "c240617827b5bf966183",
-    "url": "/cyber/static/css/main.31b0414e.chunk.css"
+    "revision": "57abd8b1917842bccbf9",
+    "url": "/cyber/static/css/main.3419fd5a.chunk.css"
   },
   {
-    "revision": "c240617827b5bf966183",
-    "url": "/cyber/static/js/main.c2406178.chunk.js"
+    "revision": "57abd8b1917842bccbf9",
+    "url": "/cyber/static/js/main.57abd8b1.chunk.js"
   },
   {
-    "revision": "885f1f58311e58c28c9d",
-    "url": "/cyber/static/js/1.885f1f58.chunk.js"
+    "revision": "81320bd1cdadd521ee39",
+    "url": "/cyber/static/js/1.81320bd1.chunk.js"
   },
   {
     "revision": "65ce02e19b9a28045534",
@@ -28,7 +28,7 @@ self.__precacheManifest = [
     "url": "/cyber/static/media/ProfileSlava.1f33a1e6.png"
   },
   {
-    "revision": "2ae3ca68ec215e744509a131f98e5a9b",
+    "revision": "33c330882d1b1b9633d840f9879e44a3",
     "url": "/cyber/index.html"
   }
 ];
