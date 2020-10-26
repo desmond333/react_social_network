@@ -1,11 +1,11 @@
 self.__precacheManifest = [
   {
-    "revision": "89ff419328d7cab13a60",
-    "url": "/cyber/static/css/main.95d09c1f.chunk.css"
+    "revision": "b93b146afeee032ecb9d",
+    "url": "/cyber/static/css/main.a8ca37ee.chunk.css"
   },
   {
-    "revision": "89ff419328d7cab13a60",
-    "url": "/cyber/static/js/main.89ff4193.chunk.js"
+    "revision": "b93b146afeee032ecb9d",
+    "url": "/cyber/static/js/main.b93b146a.chunk.js"
   },
   {
     "revision": "06310bae5f834844c2a1",
@@ -56,7 +56,7 @@ self.__precacheManifest = [
     "url": "/cyber/static/media/preloader.5d54df1e.svg"
   },
   {
-    "revision": "1f46c29d5851f80b97156301c00710ed",
+    "revision": "2abb25354b992bf04ce223e6a019584f",
     "url": "/cyber/index.html"
   }
 ];

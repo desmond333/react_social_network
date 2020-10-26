@@ -1,7 +1,7 @@
 {
-  "main.css": "/cyber/static/css/main.95d09c1f.chunk.css",
-  "main.js": "/cyber/static/js/main.89ff4193.chunk.js",
-  "main.js.map": "/cyber/static/js/main.89ff4193.chunk.js.map",
+  "main.css": "/cyber/static/css/main.a8ca37ee.chunk.css",
+  "main.js": "/cyber/static/js/main.b93b146a.chunk.js",
+  "main.js.map": "/cyber/static/js/main.b93b146a.chunk.js.map",
   "static/js/1.06310bae.chunk.js": "/cyber/static/js/1.06310bae.chunk.js",
   "static/js/1.06310bae.chunk.js.map": "/cyber/static/js/1.06310bae.chunk.js.map",
   "runtime~main.js": "/cyber/static/js/runtime~main.65ce02e1.js",
@@ -16,8 +16,8 @@
   "static/media/Avatar1.png": "/cyber/static/media/Avatar1.a27731e4.png",
   "static/media/MyNetworkName.svg": "/cyber/static/media/MyNetworkName.b7784583.svg",
   "static/media/preloader.svg": "/cyber/static/media/preloader.5d54df1e.svg",
-  "static/css/main.95d09c1f.chunk.css.map": "/cyber/static/css/main.95d09c1f.chunk.css.map",
+  "static/css/main.a8ca37ee.chunk.css.map": "/cyber/static/css/main.a8ca37ee.chunk.css.map",
   "index.html": "/cyber/index.html",
-  "precache-manifest.05207bc448a315d3c7ab8b13e6ffdea4.js": "/cyber/precache-manifest.05207bc448a315d3c7ab8b13e6ffdea4.js",
+  "precache-manifest.fb94ed55c388dbb7136fd583d470a739.js": "/cyber/precache-manifest.fb94ed55c388dbb7136fd583d470a739.js",
   "service-worker.js": "/cyber/service-worker.js"
 }
