@@ -8,8 +8,8 @@ let SET_USER_STATUS = "profilePageReducer/SET_USER_STATUS"
 
 let initialState = { //если подчасть state не приходит в reducer, то используем эту подчасть state по умолчанию
     postsData: [ /*Данные для компоненты MyPosts, получаем их будто из сервера*/
-        {id: 1, message: 'Hi, how are you?', likesCount: '10'},
-        {id: 2, message: 'It\'s my first post', likesCount: '23'},
+        {id: 1, message: 'Hi, how are you doing??', likesCount: '10'},
+        {id: 2, message: 'Yana, you are fantastic person!', likesCount: '23'},
     ],
     profile: null,
     userStatus: "",

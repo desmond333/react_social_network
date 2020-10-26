@@ -14,9 +14,9 @@ const AddMessageForm = (props) => {
                 <div>
                     {/*Field это контейнерная компонента из Redux form*/}
                     <Field component={Textarea} validate={[maxLength50, required]}
-                           name={"textMessage"} placeholder="Введите сообщение"/>
+                           name={"textMessage"} placeholder="Оставьте сообщение как аноним" className={styles.textArea}/>
                 </div>
-                <div>
+                <div className={styles.sendButton}>
                     <button>send message</button>
                 </div>
             </form>

@@ -26,7 +26,7 @@ let Paginator = ({totalItemsCount, pageSize, currentPage, onPageChanged, portion
 
     return <div className={styles.paginator}>
         { portionNumber > 1 && //если номер порции > 1, то появляется кнопка ПРЕДЫДУЩИЕ
-        <button onClick={() => { setPortionNumber(portionNumber - 1) }}>PREV</button> }
+        <button onClick={() => { setPortionNumber(portionNumber - 1) }}>{'<'}</button> }
 
             {pages
                 .filter(p => p >= leftPortionPageNumber && p<=rightPortionPageNumber)
@@ -40,7 +40,7 @@ let Paginator = ({totalItemsCount, pageSize, currentPage, onPageChanged, portion
                              }}>{p}</span>
             })}
         { portionCount > portionNumber && //если число порций > номера порции, то появляется кнопка СЛЕДУЮЩИЕ
-            <button onClick={() => { setPortionNumber(portionNumber + 1) }}>NEXT</button> }
+            <button onClick={() => { setPortionNumber(portionNumber + 1) }}>{'>'}</button> }
 
 
     </div>

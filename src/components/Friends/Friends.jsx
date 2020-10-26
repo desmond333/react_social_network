@@ -1,18 +1,18 @@
 import React from 'react';
-import s from './News.module.css';
+import s from './Friends.module.css';
 import {compose} from "redux";
 import {withAuthRedirect} from "./../../hoc/withAuthRedirect";
 
-const News = (props) => {
+const Friends = (props) => {
     return (
         <div className={s.content}>
-            News
+            Friends
         </div>
     )
 }
 
-const NewsContainer = compose(
+const FriendsContainer = compose(
     withAuthRedirect,
-)(News)
+)(Friends)
 
-export default NewsContainer;
+export default FriendsContainer;

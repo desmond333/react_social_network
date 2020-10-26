@@ -1,14 +1,20 @@
 import React from 'react';
-import s from './ProfileDescription.module.css';
+import styles from './ProfileDescription.module.css';
 import ProfileStatusWithHooks from "./ProfileStatus/ProfileStatusWithHooks";
 
-const ProfileDescription = (props) => {
+const ProfileDescription = ({usersData, ...props}) => {
     return (
-        <div className={s.profileDescription}>
-            <h3>description</h3>
+        <div className={styles.profileDescription}>
+            {usersData.map(u => {
+                if(props.userId == u.id){
+                    return <div>
+                        <div className={styles.userName}>{u.name}</div>
+                        <div className={styles.userText}>User id: {u.id}</div>
+                    </div>
+                }
+            })}
             <ProfileStatusWithHooks userStatus={props.userStatus}
                            updateUserStatusThunk={props.updateUserStatusThunk}/>
-            <img src={props.profile.photos.large}/>
         </div>
     )
 }

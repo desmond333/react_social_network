@@ -27,6 +27,8 @@
 }
 .loginBlockIsAuthFalse p {
     font-size: 15px;
+    text-decoration: none;
+    color: black;
     margin: 0;
     padding: 0;
 }
@@ -37,7 +39,12 @@
     border-radius: 10px;
 }
 .loginBlockIsAuthTrue:hover {
-    background: linear-gradient(120deg, #ecb309, #d91359);
+    background: linear-gradient(120deg, #3309ec, #d737dc);
+}
+.loginBlockIsAuthFalse:hover p{
+    background: linear-gradient(120deg, #3309ec, #d737dc);
+    color: white;
+    border-radius: 10px;
 }
 .loginBlockIsAuthTrue p{
     grid-column: 1;

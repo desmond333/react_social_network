@@ -3,7 +3,6 @@ import Dialogs from "./Dialogs";
 import {sendNewMessageCreator} from "./../../redux/dialogsPageReducer"
 //вызываем утилиты, возращающие action для диспатча
 import {connect} from "react-redux";
-import {withAuthRedirect} from './../../hoc/withAuthRedirect'
 import {compose} from "redux";
 
 //в эту функцию f connect автоматически передаст store.getState()
@@ -22,9 +21,8 @@ let mapDispatchToProps = (dispatch) => { //отправляет колбэки �
     }
 }
 
-const DialogsContainer = compose( //3.)Оборачиваем connect в DialogsContainer
-    connect(mapStateToProps, mapDispatchToProps), // 2.) оборачиваем hoc в connect и добавляем STATE и  DISPATCH
-    withAuthRedirect, // 1.) оборачиваем Dialogs в hoc
+const DialogsContainer = compose(
+    connect(mapStateToProps, mapDispatchToProps), //оборачиваем hoc в connect и добавляем STATE и  DISPATCH
 )(Dialogs)
 
 export default DialogsContainer;

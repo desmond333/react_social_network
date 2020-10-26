@@ -9,7 +9,8 @@
     border-radius: 8px;
 }
 .profilePhoto img{
-    border-radius: 10px;
+    border-radius: 50%;
+    max-height: 200px;
 }
 .profilePhoto button{
     border-radius: 5px;

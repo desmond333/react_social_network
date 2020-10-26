@@ -24,13 +24,13 @@ const LoginForm = (props) => {
                 <div>
                     <Field component={Input} validate={[required]}
                            name={"rememberMe"} type={"checkbox"}/>
-                    <span>Запомнить меня</span>
+                    <span>remember me</span>
                 </div>
                 {props.error && <div className={styles.formSummaryError}>
                     {props.error}
                 </div>} {/*показать в случае существования ошибки*/}
-                <div>
-                    <button>Отправить</button>
+                <div className={styles.sendButton}>
+                    <button>Send yours data</button>
                 </div>
             </form>
         </div>

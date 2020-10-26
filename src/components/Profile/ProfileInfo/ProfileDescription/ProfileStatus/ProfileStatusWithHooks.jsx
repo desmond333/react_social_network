@@ -1,5 +1,5 @@
 import React, {useState, useEffect} from "react";
-import s from './ProfileStatus.module.css';
+import styles from './ProfileStatus.module.css';
 
 const ProfileStatusWithHooks = (props) => {
     let editModeState = useState(false) // useState возвращает массив из двух элементов
@@ -29,8 +29,14 @@ const ProfileStatusWithHooks = (props) => {
         setStatus(e.currentTarget.value) //target это input
     }
 
+    const noStatus = () => {
+        return (
+            <span className={styles.noStatus}>no status</span>
+        )
+    }
+
     return (
-        <div className={s.profileStatus}>
+        <div className={styles.profileStatus}>
             {editMode &&
             <div>
                 <input onChange={onStatusChange} autoFocus={true} onBlur={deactivateEditMode}
@@ -38,8 +44,8 @@ const ProfileStatusWithHooks = (props) => {
             </div>
             }
             {!editMode &&
-            <div>
-                <span onDoubleClick={activateEditMode}>{props.userStatus || "-------"}</span>
+            <div onDoubleClick={activateEditMode} className={styles.userText}>
+                Status: {props.userStatus != null ? props.userStatus : noStatus()}
             </div>
             }
         </div>

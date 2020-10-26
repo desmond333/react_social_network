@@ -10,10 +10,12 @@ import UsersContainer from "./components/Users/UsersContainer";
 import LoginPage from "./components/LoginPage/LoginPage";
 import {compose} from "redux";
 import {connect} from "react-redux";
-import {withAuthRedirect} from "./hoc/withAuthRedirect";
-import Dialogs from "./components/Dialogs/Dialogs";
 import {initializedAppThunkCreator} from "./redux/appReducer";
 import Preloader from "./components/Common components/Preloader";
+import NewsContainer from "./components/News/News";
+import MusicContainer from "./components/Music/Music";
+import SettingsContainer from "./components/Settings/Settings";
+import FriendsContainer from "./components/Friends/Friends";
 
 class App extends React.Component {
     componentDidMount() { //конструирование объекта происходит один единственный раз, но он убивается если меняется url
@@ -52,6 +54,14 @@ class App extends React.Component {
                         {/* В методе render находится функция колбэк, вызывающая компоненты */}
                         <Route path='/login'
                                render={() => <LoginPage/>}/>
+                        <Route path='/news'
+                               render={() => <NewsContainer/>}/>
+                        <Route path='/music'
+                               render={() => <MusicContainer/>}/>
+                        <Route path='/settings'
+                               render={() => <SettingsContainer/>}/>
+                        <Route path='/friends'
+                               render={() => <FriendsContainer/>}/>
                     </div>
                 </div>
             </div>

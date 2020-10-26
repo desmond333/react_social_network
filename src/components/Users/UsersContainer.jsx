@@ -9,7 +9,6 @@ import {
     unfollowThunkCreator
 } from "./../../redux/usersPageReducer"
 import {compose} from "redux";
-import {withAuthRedirect} from "./../../hoc/withAuthRedirect";
 import {
     getUsersDataSuperSelector,
     getCurrentPageSelector,

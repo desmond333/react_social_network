@@ -1,10 +1,15 @@
 .loginPage{
-    background: linear-gradient(to right, #f8d066, #ef491a);
+    background: linear-gradient(120deg, #3309ec, #d737dc);
     padding: 10px;
+    border-radius: 10px;
 }
 .formSummaryError {
     border: solid #1d9fe3 2px;
     padding: 5px;
     margin: 5px;
     color: red;
+}
+.sendButton button{
+    width: 147px;
+    height: 35px;
 }

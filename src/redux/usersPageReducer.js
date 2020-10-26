@@ -12,7 +12,7 @@ let TOGGLE_IS_FOLLOWING_PROGRESS = "usersPageReducer/TOGGLE_IS_FOLLOWING_PROGRES
 let initialState = { //если подчасть state не приходит в reducer, то используем эту подчасть state по умолчанию
     usersData: [], /*Данные для компоненты MyPosts, получаем их будто из сервера*/
     totalUsersCount: 30,
-    displayUsersNumber: 10,
+    displayUsersNumber: 12,
     currentPage: 1,
     isFetching: false, //запрос ПОСЫЛАЕТСЯ?
     followingInProgress: [], //массив кликнутых пользователей

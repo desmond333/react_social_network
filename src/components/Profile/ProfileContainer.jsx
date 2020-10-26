@@ -7,24 +7,34 @@ import {
     getUserStatusThunkCreator,
     updateUserStatusThunkCreator
 } from "./../../redux/profilePageReducer";
-import {withRouter} from "react-router-dom";
+import {Redirect, withRouter} from "react-router-dom";
 import {compose} from "redux";
-import {withAuthRedirect} from './../../hoc/withAuthRedirect'
+import {getUsersDataSuperSelector} from "./../../redux/usersPageSelectors";
 
 class ProfileContainerClass extends React.Component {
 
-    componentDidMount() { //конструирование объекта происходит один единственный раз, но он убивается если меняется url
+    refreshProfile() {
         let userId = this.props.match.params.userId //эти данные появились с помощью добавления нами параметра в path ProfileContainer
         if (!userId) {
-            userId = this.props.autorizedUserId
+            userId = this.props.authorizedUserId
             userId = 11410
-
-            if (!userId) { // если autorizedUserId = 0 or undefined
-                this.props.history.push("/login") //перенаправляем на страницу логина
+            if (!userId) { // если authorizedUserId = 0 or undefined
+                this.props.history.push("/login") //перенаправляем на страницу логина*/
+                return <Redirect to={"/login"}/>
             }
         }
         this.props.getUserProfileThunk(userId) //вызываем и передаём санке id кликнутого пользователя
         this.props.getUserStatusThunk(userId) //вызываем и передаём санке id кликнутого пользователя
+    }
+
+    componentDidMount() { //конструирование объекта происходит один единственный раз, но он убивается если меняется url
+        this.refreshProfile()
+    }
+
+    componentDidUpdate(prevProps, prevState, snapshot) { //вызывается сразу же после обновления компоненты
+        if (this.props.match.params.userId != prevProps.match.params.userId) {
+            this.refreshProfile()
+        }
     }
 
     render() {
@@ -33,6 +43,8 @@ class ProfileContainerClass extends React.Component {
                 <Profile {...this.props} /*спред оператор = распространение*/
                          profile={this.props.profile}
                          userStatus={this.props.userStatus}
+                         userId={this.props.match.params.userId}
+                         usersData={this.props.usersData}
                          updateUserStatusThunk={this.props.updateUserStatusThunk}/>
             </div>
         )
@@ -45,7 +57,8 @@ let mapStateToProps = (state) => {//превращает часть state в pro
         profile: state.profilePage.profile,
         userStatus: state.profilePage.userStatus,
         isAuth: state.auth.isAuth,
-        autorizedUserId: state.auth.userId,
+        authorizedUserId: state.auth.userId,
+        usersData: getUsersDataSuperSelector(state),
     }
 }
 

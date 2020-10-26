@@ -33,7 +33,7 @@
     border-radius: 5px;
     /*Для анимации*/
     display: block;
-    background-image: linear-gradient(to left,transparent,transparent 50%,#09d2ec 50%,#37dc73);
+    background-image: linear-gradient(to left,transparent,transparent 50%, #3309ec 50%, #d737dc);
     background-position: 100% 0;
     background-size: 200% 100%;
     transition: all .25s ease-in;
@@ -60,7 +60,7 @@
     margin-bottom: 8px;
     /*Для анимации*/
     display: block;
-    background-image: linear-gradient(to left,transparent,transparent 50%,#09d2ec 50%,#37dc73);
+    background-image: linear-gradient(to left,transparent,transparent 50%, #3309ec 50%, #d737dc);
     background-position: 100% 0;
     background-size: 200% 100%;
     transition: all .25s ease-in;
