@@ -1,4 +1,3 @@
-import * as serviceWorker from './serviceWorker'
 import store from "./redux/redux-store"
 import React from 'react' //jsx же транспилируется в js с конструкцией React.createElement - поэтому нужен import React,
 // даже если явно в jsx'е нет конструкций с React
@@ -19,16 +18,3 @@ ReactDOM.render(
     </HashRouter>, document.getElementById('root')
 )
 
-
-/*rerenderEntireTree(store.getState()); //Вызываем f в первый раз
-
-store.subscribe(() => {
-    let state = store.getState(); //redux самостоятельно не передаёт state
-    rerenderEntireTree(state); //перерисовка дерева
-});*/
-
-
-// If you want your app to work offline and load faster, you can change
-// unregister() to register() below. Note this comes with some pitfalls.
-// Learn more about service workers: http://bit.ly/CRA-PWA
-serviceWorker.unregister();
