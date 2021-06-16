@@ -15,3 +15,5 @@ cd movie-db
 npm install
 npm run dev
 ```
+![react_social_network](https://user-images.githubusercontent.com/67102520/122243148-8f6f0500-cecc-11eb-956d-e934f1e3b9d4.gif)
+
