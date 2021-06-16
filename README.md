@@ -1,19 +1,19 @@
 # Social network with react
-### To see this project you need to click on the [link](https://star-wars-encyclopedia.vercel.app/)
 
-### This web application 
+### This web application is an online platform which people use to build social networks or social relationships with other people who share similar personal or career interests, activities, backgrounds or real-life connections.
 
 ### During the development of this app I mastered:
 - React
 - Redux
-- JavaScript
+- CSS
+- JS
 
 ### You can run this project locally, just do:
 ```sh
 clone branch review with git clone https://github.com/desmond333/star_wars_encyclopedia or fork it and then clone it from your forked repo
 cd movie-db
 npm install
-npm run dev
+npm start
 ```
 ![react_social_network](https://user-images.githubusercontent.com/67102520/122243148-8f6f0500-cecc-11eb-956d-e934f1e3b9d4.gif)
 
