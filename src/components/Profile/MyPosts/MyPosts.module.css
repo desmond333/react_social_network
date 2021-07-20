@@ -1,73 +1,7 @@
-.postForm{
+.postsBlock {
     padding: 10px;
-    /*background: linear-gradient(120deg, #09d2ec, #37dc73);*/
-    background-color: #1F2833;
-    border-radius: 8px;
-    height: 80px;
-}
-.postForm form{
-    display: grid;
-    grid-template-columns: 5fr 1fr;
-    grid-gap: 20px;
-    align-content: center;
-}
-.postForm .textArea{
-    height: 100%;
-    width: 100%;
-    border-radius: 5px;
-    font-size: 15px;
-    font-weight: bolder;
-    padding-left: 8px;
-    font-style: italic;
-}
-.postForm form button{
-    grid-column: 2;
-    max-height: 58px;
-    position: relative;
-    overflow: hidden;
-    border: 2px solid #831ed9;
-    border-radius: 8px;
-    background-color: black;
-    font-weight: bold;
-    text-transform: uppercase;
-    font-size: 12px;
-    letter-spacing: 1.15px;
-    font-family: 'Montserrat', sans-serif;
-    color: white;
-    transition: .2s ease-in-out;
-}
-.postForm form button:before{
-    content: "";
-    background: linear-gradient(90deg, rgba(255,255,255,.1), rgba(255,255,255,.5));
-    height: 70px;
-    width: 50px;
-    position: absolute;
-    top: -8px;
-    left: -75px;
-    transform: skewX(-45deg);
-}
-.postForm form button:hover {
-    background: #831ed9;
-    color: #fff;
-    cursor: pointer;
-}
-.postForm form button:hover:before {
-    left: 180px;
-    transition: .5s ease-in-out;
-}
-.postForm form button:active {
-    font-size: 9px;
-    letter-spacing: 1.7px;
-    border: 2px solid white;
 }
 
-.postedPosts{
-    background-color: #1F2833;
-    border-radius: 8px;
-    margin-top: 20px;
-    margin-bottom: 40px;
-    padding: 25px;
-}
-.posts{
+.posts {
     margin-top: 10px;
 }

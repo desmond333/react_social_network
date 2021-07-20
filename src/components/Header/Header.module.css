@@ -1,143 +1,17 @@
 .header {
-    position: relative;
-    height: 50px;
-    margin-bottom: 20px;
-    /*background-color: #EDE868;*/
-    /*background: #1F2833;*/
-    background: linear-gradient(to bottom, #000000, #1F2833);
-    background-size: cover;
-    text-align: center;
-}
-.mainTitle {
-    position: relative;
-    top: -6px;
+    grid-area: h;
+    background-color: green;
 }
 
-.loginBlock{
-    position: relative;
-    top: -60px;
-    left: 170vh;
-    width: 230px;
-    height: 38px;
+.header img {
+    width: 20px;
 }
-.loginBlockIsAuthFalse {
-    background-color: white;
-    border-radius: 10px;
-    padding: 5px;
+
+.loginBlock {
+    float: right;
+
 }
-.loginBlockIsAuthFalse p {
-    font-size: 15px;
-    text-decoration: none;
-    color: black;
-    margin: 0;
-    padding: 0;
-}
-.loginBlockIsAuthTrue {
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-    padding: 5px;
-    border-radius: 10px;
-}
-.loginBlockIsAuthTrue:hover {
-    background: linear-gradient(120deg, #3309ec, #d737dc);
-}
-.loginBlockIsAuthFalse:hover p{
-    background: linear-gradient(120deg, #3309ec, #d737dc);
+.loginBlock a {
     color: white;
-    border-radius: 10px;
 }
-.loginBlockIsAuthTrue p{
-    grid-column: 1;
-    font-size: 15px;
-    margin: 0;
-    padding: 0;
-}
-.loginBlockIsAuthTrue button {
-    grid-column: 2;
-    background-color: black;
-    color: white;
-    border-radius: 6px;
-    font-size: 15px;
-    letter-spacing: 1.2px;
-    margin: 0;
-    padding: 0;
-}
-.loginBlockIsAuthTrue button:active {
-    color: #c7c7c7;
-    font-size: 12px;
-    letter-spacing: 2px;
-}
-
-
-
-
-/*
-@import url('https://fonts.googleapis.com/css2?family=Cookie&display=swap');
-
-.header h1 {
-    color: #EDEDED;
-    font-family: "Cookie";
-    font-size: 30px;
-    left: 0%;
-    right: 0%;
-    top: -25px;
-    letter-spacing: 5px;
-    position: absolute;
-    text-align: center;
-    text-transform: uppercase;
-    animation: move linear 2000ms infinite;
-}
-
-@keyframes move {
-    0% {
-        text-shadow: 4px -4px 0 gray,
-        3px -3px 0 gray,
-        2px -2px 0 gray,
-        1px -1px 0 gray,
-        -4px 4px 0 black,
-        -3px 3px 0 black,
-        -2px 2px 0 black,
-        -1px 1px 0 black;
-    }
-    25% {
-        text-shadow: -4px -4px 0 black,
-        -3px -3px 0 black,
-        -2px -2px 0 black,
-        -1px -1px 0 black,
-        4px 4px 0 gray,
-        3px 3px 0 gray,
-        2px 2px 0 gray,
-        1px 1px 0 gray;
-    }
-    50% {
-        text-shadow: -4px 4px 0 gray,
-        -3px 3px 0 gray,
-        -2px 2px 0 gray,
-        -1px 1px 0 gray,
-        4px -4px 0 black,
-        3px -3px 0 black,
-        2px -2px 0 black,
-        1px -1px 0 black;
-    }
-    75% {
-        text-shadow: 4px 4px 0 black,
-        3px 3px 0 black,
-        2px 2px 0 black,
-        1px 1px 0 black,
-        -4px -4px 0 gray,
-        -3px -3px 0 gray,
-        -2px -2px 0 gray,
-        -1px -1px 0 gray;
-    }
-    100% {
-        text-shadow: 4px -4px 0 gray,
-        3px -3px 0 gray,
-        2px -2px 0 gray,
-        1px -1px 0 gray,
-        -4px 4px 0 black,
-        -3px 3px 0 black,
-        -2px 2px 0 black,
-        -1px 1px 0 black;
-    }
-}*/
 
