@@ -7,6 +7,7 @@
 - Redux
 - CSS
 - JS
+- TS
 
 ### You can run this project locally, just do:
 ```sh
@@ -15,5 +16,10 @@ cd movie-db
 npm install
 npm start
 ```
+
+### To log in, use this data
+#### my_post_office1@mail.ru
+#### 39151.Secur777TOR777
+
 ![react_social_network](https://user-images.githubusercontent.com/67102520/122243148-8f6f0500-cecc-11eb-956d-e934f1e3b9d4.gif)
 
